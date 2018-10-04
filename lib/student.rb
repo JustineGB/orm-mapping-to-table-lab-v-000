@@ -35,6 +35,7 @@ class Student # Remember, you can access your database connection anywhere in th
   end
 
   def self.drop_table
+    DB[:conn].execute("DROP TABLE students")
   end 
 
 end
