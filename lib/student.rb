@@ -29,13 +29,13 @@ class Student # Remember, you can access your database connection anywhere in th
   end
 
   def self.create(name:, grade:)
-    student = Students.new(name, grade)
+    student = Student.new(name, grade)
     student.save
     student
   end
 
   def self.drop_table
     DB[:conn].execute("DROP TABLE students")
-  end 
+  end
 
 end
