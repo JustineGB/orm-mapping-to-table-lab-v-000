@@ -34,4 +34,7 @@ class Student # Remember, you can access your database connection anywhere in th
     student
   end
 
+  def self.drop_table
+  end 
+
 end
